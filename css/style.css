@@ -277,10 +277,12 @@ ul { list-style: none; }
 }
 .hero__stats-inner {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
   text-align: center;
 }
+.stat strong { font-size: 1.6rem; }
+.areas-grid--two { grid-template-columns: repeat(2, 1fr); }
 .stat strong {
   display: block;
   font-family: var(--font-serif);
@@ -882,6 +884,7 @@ select { cursor: pointer; }
   .hero__sub { margin-left: auto; margin-right: auto; }
   .hero__actions { justify-content: center; }
   .hero__stats-inner { grid-template-columns: repeat(3, 1fr); }
+  .areas-grid--two { grid-template-columns: 1fr; }
   .books-grid { grid-template-columns: repeat(2, 1fr); }
   .cv-grid { grid-template-columns: 1fr; gap: 40px; }
   .footer__inner { grid-template-columns: 1fr 1fr; }
